@@ -3,19 +3,11 @@ import React, {useState, useEffect} from "react";
 // import {firestore} from '../../firebase.js';
 import Topbar from "../../components/topbar/Topbar";
 import { Card } from "../../components/card/Card";
+import { Post } from "../../common/types";
 import "./share.css"; 
 
 export default function ZeroWaste() {
-    interface post {
-        id: number,
-        date: string,
-        title: string, 
-        writer: string,
-        image: string,
-        contents: string,
-        timestamp: number
-    }
-    const [posts, setPosts] = useState<post[]>([]);
+    const [posts, setPosts] = useState<Post[]>([]);
 //   const [loading, setLoading] = useState(false);
 
 //   const ref = firestore.collection("posts");

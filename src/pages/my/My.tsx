@@ -7,6 +7,7 @@ import GreenBall from "../../assets/green_circle.png";
 import LightgreenBall from "../../assets/lightgreen_circle.png";
 import YellowBall from "../../assets/yellow_circle.png";
 import BlueBall from "../../assets/blue_circle.png";
+import { PostType, Post } from "../../common/types";
 import "./my.css";
 
 
@@ -19,24 +20,7 @@ export default function My() {
     }
     let name: string, uid: number;
 
-    interface postType {
-        zero: number,
-        carbon: number, 
-        food: number,
-        others: number
-    }
-
-    interface post {
-        id: number,
-        date: string,
-        title: string, 
-        writer: string,
-        image: string,
-        contents: string,
-        timestamp: number
-    }
-
-    const [postTypes, setPostTypes] = useState<postType>({
+    const [postTypes, setPostTypes] = useState<PostType>({
         zero: 0,
         carbon: 0, 
         food: 0,
@@ -44,7 +28,7 @@ export default function My() {
     });
     const tot = postTypes.zero + postTypes.carbon + postTypes.food + postTypes.others;
 
-    const [posts, setPosts] = useState<post[]>([]);
+    const [posts, setPosts] = useState<Post[]>([]);
     // const [loading, setLoading] = useState(false);
 
    

@@ -2,7 +2,7 @@
 
 [ ] Router
 [x] [폴더 구조](https://ko.reactjs.org/docs/faq-structure.html)
-[ ] interface 등록 (Card.tsx, Diary.tsx)
+[x] interface 등록 (Card.tsx, Diary.tsx)
 [ ] Datepicker (Diary.tsx)
 [ ] Dropdown (Diary.tsx)
 [ ] private / public toggle로 (Diary.tsx)
