@@ -1,25 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/home/Home';
+import Diary from './pages/diary/Diary';
+import My from "./pages/my/My";
+import ZeroWaste from "./pages/share/ZeroWaste";
+// import CarbonFootprint from "./pages/share/CarbonFootprint";
+// import Food from "./pages/share/Food";
+// import Others from "./pages/share/Others";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/diary" element={<Diary/>} />
+        <Route path="/zerowaste" element={<ZeroWaste/>} />
+        {/* <Route path="/carbonfootprint" element={<CarbonFootprint/>} />
+        <Route path="/food" element={<Food/>} />
+        <Route path="/others" element={<Others/>} /> */}
+        <Route path="/my" element={<My/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

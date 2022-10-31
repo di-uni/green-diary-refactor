@@ -1,0 +1,74 @@
+.topbarContainer{
+    height: 25%;
+    width: 100%;
+    padding-top: 2%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.topbarLeft{
+    flex: 2;
+}
+
+.logo{
+    font-size: 12px;
+    margin-left: 48px;
+    font-weight: bold;
+    color: var(--main-color);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.topbarCenter{
+    flex: 8;
+}
+
+.topbarRight{
+    flex: 4;
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--main-color);
+}
+
+.topbarText{
+    font-size: 12px;
+    font-weight: medium;
+    color: var(--main-color);
+    cursor: pointer;
+    text-decoration: none;
+} 
+
+/* .loginout{
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    border-style: solid;
+    padding: 10px 17px 10px 17px;
+    color: var(--logintext-color);
+    background-color: var(--loginbutton-color);
+    border-color: transparent;
+    border-radius: 10px;
+}  */
+
+.loginout{
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    color: var(--main-color);
+} 
+
+.topbarUser{
+    font-size: 12px;
+} 
+
+.google_login_button {
+    font-size: 12px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--main-color);
+}
