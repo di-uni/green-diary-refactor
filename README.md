@@ -20,4 +20,4 @@
 - [x] lint 적용
 - [x] prettier 적용
 - [ ] test
-- [ ] dependencies 정리
+- [x] dependencies 정리 (참고: [Everything goes into dependencies? (create-react-app)](https://github.com/facebook/create-react-app/issues/6180))
