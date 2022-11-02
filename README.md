@@ -17,7 +17,7 @@
 - [ ] image
 
 ## 기타
-- [x] lint 적용
-- [x] prettier 적용
+- [x] [eslint](https://www.daleseo.com/js-eslint/) 적용
+- [x] [prettier](https://www.daleseo.com/js-prettier/) 적용
 - [ ] test
 - [x] dependencies 정리 (참고: [Everything goes into dependencies? (create-react-app)](https://github.com/facebook/create-react-app/issues/6180))
