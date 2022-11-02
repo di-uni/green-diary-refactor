@@ -10,7 +10,7 @@ export default function Topbar() {
     displayName: "Jiyun Park",
   };
   useEffect(() => {
-    axios.get("localhost:3306/users").then((res) => {
+    axios.get("/users").then((res) => {
       console.log(res);
     });
   }, []);

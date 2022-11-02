@@ -31,3 +31,6 @@ app.get("/users", async function (req: Request, res: Response) {
   const users = await AppDataSource.getRepository(User).find();
   res.json(users);
 });
+
+// start express server
+app.listen(4000);
